@@ -15,7 +15,7 @@
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:background="@color/photo_placeholder"
             android:scaleType="fitCenter" />
 
@@ -25,12 +25,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:maxLines="1"
+            android:maxLines="2"
             android:paddingBottom="4dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="16dp"
-            android:textColor="#6000"
+            android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <TextView
@@ -39,11 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:maxLines="1"
+            android:maxLines="3"
             android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:textColor="#6000" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>
