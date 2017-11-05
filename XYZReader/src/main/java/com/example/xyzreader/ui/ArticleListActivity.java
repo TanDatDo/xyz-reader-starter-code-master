@@ -211,7 +211,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                         public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
-                                Palette p = Palette.generate(bitmap, 12);
+                                Palette p = Palette.from(bitmap).generate();
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 holder.subtitleView
                                         .setBackgroundColor(mMutedColor);
